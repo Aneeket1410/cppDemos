@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-class Solution {
+class Solution1 {
     std::map<char, int> Roman = 
     {{'I', 1},{'V', 5},{'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000}};
 public:
@@ -40,7 +40,7 @@ public:
 
 //interesting solutions
 //1. most efficient
-class Solution {
+class Solution2 {
 public:
     int romanToInt(string s) {
         int answer=0;
@@ -76,8 +76,8 @@ public:
     }
 };
 
-//2. interesting choice of containers
-class Solution {
+//2. interesting choice of container size!: vector of size 26
+class Solution3 {
 public:
     int romanToInt(string s) {
         vector<int> integer(26, 0);
